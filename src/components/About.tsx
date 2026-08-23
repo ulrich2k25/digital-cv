@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function About() {
   const skills = {
     Frontend: ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS"],
@@ -19,8 +21,52 @@ export default function About() {
         </div>
 
         <div className="grid gap-14 lg:grid-cols-[1.05fr_0.95fr]">
-          {/* Beschreibung */}
+          {/* Profil & Beschreibung */}
           <div>
+            {/* Profilkarte */}
+            <div className="mb-8 flex flex-col items-center gap-5 rounded-2xl border border-white/10 bg-gray-950/80 p-5 sm:flex-row sm:items-center">
+              {/* Foto */}
+              <div className="relative h-[150px] w-[125px] shrink-0 overflow-hidden rounded-2xl border border-green-400/20 bg-gray-900 shadow-[0_0_35px_rgba(74,222,128,0.08)]">
+                <Image
+                  src="/profile.png"
+                  alt="Djomeni Pouke"
+                  fill
+                  sizes="125px"
+                  className="object-cover object-top"
+                />
+              </div>
+
+              {/* Kurzprofil */}
+              <div className="text-center sm:text-left">
+                <p className="mb-2 text-xs font-medium uppercase tracking-[0.2em] text-green-400">
+                  Wirtschaftsinformatik
+                </p>
+
+                <h3 className="text-xl font-semibold text-white">
+                  Full-Stack Entwickler
+                </h3>
+
+                <p className="mt-2 text-sm leading-6 text-gray-400">
+                  Softwareentwicklung · Frontend & Backend
+                </p>
+
+                <div className="mt-4 flex flex-wrap justify-center gap-2 sm:justify-start">
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-300">
+                    React
+                  </span>
+
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-300">
+                    Next.js
+                  </span>
+
+                  <span className="rounded-full border border-white/10 bg-white/5 px-3 py-1 text-xs text-gray-300">
+                    NestJS
+                  </span>
+                </div>
+              </div>
+            </div>
+
+            {/* Beschreibung */}
             <p className="text-lg leading-8 text-gray-300">
               Ich studiere Wirtschaftsinformatik mit Schwerpunkt
               Softwareentwicklung und verfüge über praktische Erfahrung in der
