@@ -2,10 +2,47 @@ import Image from "next/image";
 
 export default function About() {
   const skills = {
-    Frontend: ["React", "Next.js", "Angular", "TypeScript", "Tailwind CSS"],
-    Backend: ["NestJS", "Node.js", "REST APIs", "JWT"],
-    "Data & Datenbanken": ["PostgreSQL", "MongoDB", "Python"],
-    "Tools & DevOps": ["Git", "Docker", "Jenkins", "Jira"],
+    Programmiersprachen: [
+      "Java",
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "PHP",
+      "SQL",
+    ],
+
+    Frontend: [
+      "HTML5",
+      "CSS3",
+      "React",
+      "Angular",
+      "Next.js",
+      "Tailwind CSS",
+      "Responsive Design",
+    ],
+
+    Backend: [
+      "Node.js",
+      "NestJS",
+      "REST APIs",
+      "JWT Authentication",
+      "API Integration",
+    ],
+
+    Datenbanken: ["PostgreSQL", "MongoDB", "SQL Server"],
+
+    "Tools & DevOps": [
+      "Git",
+      "GitHub",
+      "GitLab",
+      "Docker",
+      "Jenkins",
+      "Jira",
+      "IntelliJ IDEA",
+      "VS Code",
+    ],
+
+    "Weitere Technologien": ["SAP", "Figma", "KI / Claude", "Shopify"],
   };
 
   return (
