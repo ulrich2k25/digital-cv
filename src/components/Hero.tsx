@@ -22,9 +22,10 @@ export default function Hero() {
         </h2>
 
         <p className="relative mt-6 text-sm sm:text-base md:text-lg text-gray-300 max-w-2xl mx-auto leading-7 sm:leading-8">
-          Ich entwickle moderne Webanwendungen mit React, Next.js, Node.js und
-          PostgreSQL. Mein Fokus liegt auf Backend-Systemen, skalierbaren
-          Architekturen und der Entwicklung effizienter digitaler Lösungen.
+          Ich entwickle moderne Full-Stack-Webanwendungen – vom Frontend über
+          Backend-Systeme und APIs bis zur Datenbank. Dabei lege ich Wert auf
+          skalierbare Architekturen, sauberen Code und durchdachte digitale
+          Lösungen.
         </p>
 
         <div className="relative mt-8 sm:mt-10 flex flex-col sm:flex-row items-center justify-center gap-4">
